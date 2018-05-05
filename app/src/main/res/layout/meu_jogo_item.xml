@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        >
+
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="100dp"
+
+            tools:src="@drawable/godofwar"
+
+            android:id="@+id/ivFoto"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/titulo_god_of_war"
+                android:textSize="22sp"
+                android:textStyle="bold|italic"
+                android:id="@+id/tvTitulo"/>
+
+            <TextView
+                android:textColor="#AAA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/lancamento_god_of_war"
+                android:id="@+id/tvLancamento"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="3"
+                android:ellipsize="end"
+                tools:text="@string/descricao_god_of_war"
+                android:id="@+id/tvDescricao"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
